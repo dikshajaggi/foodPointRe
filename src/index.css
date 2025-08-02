@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: local('Gilroy-Bold'), url(./fonts/gilroy/Gilroy-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: local('Gilroy-Medium'), url(./fonts/gilroy/Gilroy-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: local('Gilroy-Light'), url(./fonts/gilroy/Gilroy-Light.ttf) format('truetype');
+}
+
+body {
+  font-family: 'Gilroy-Medium', sans-serif;
+}
+
+@theme {
+    --color-primary: rgb(255, 82, 0);
+    --color-success: rgb(27, 166, 114);
+    --color-neutral: #ffffff;
+    --color-textdark: rgba(2, 6, 12, 0.92);
+    --color-textlight: rgba(2, 6, 12, 0.15);
+    --color-alert: #fa4a5b;
+    --color-placeholder: #525252;
+
+    --text-xxl: 24px;
+    --text-xl: 18px;
+    --text-lg: 16px;
+    --text-md: 13px;
+    --text-sm: 8px;
+    
+    --font-weight-exbold: 800;
+    --font-weight-bold: 600;
+    --font-weight-medium: 400;
+    --font-weight-light: 200;
+
+    --radius-exrounded: 16px;
+    --radius-mdrounded: 8px;
+}
+
+ /* //#1ba672 */
