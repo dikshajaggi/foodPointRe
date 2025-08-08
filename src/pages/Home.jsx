@@ -4,23 +4,16 @@ import RestCard from '../components/RestCard'
 import CategoryCard from '../components/CategoryCard'
 import { Link } from 'react-router-dom'
 import ClearCartAlert from '../components/ClearCartAlert'
-import DishCard from '../components/DishCard'
+import DishAccordion from '../components/DishAccordion'
 
 // Sample restaurant data
 const restaurantData = new Array(12).fill(null)
-const dishData = new Array(8).fill(null)
 const Home = () => {
   return (
     <div className='flex flex-col items-center justify-center'>
       <ClearCartAlert />
 
-       <div className='flex flex-wrap justify-center w-full gap-8 px-4 mt-10 mb-10'>
-        {dishData.map(() => {
-          return (
-            <DishCard />  
-          )
-        })}
-        </div>
+      <DishAccordion />
      
       <CategoryCard />
       {/* Restaurant Cards Grid */}

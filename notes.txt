@@ -53,3 +53,37 @@ font (discover restaurants) -> rgba(2, 6, 12, 0.92) font-size: 24px; font-weight
 In Tailwind:
 No prefix = Mobile style
 Prefixed classes = Larger breakpoints
+
+
+https://bytes.swiggy.com/media-on-swiggys-mobile-apps-e97452fceb3f
+
+https://bytes.swiggy.com/making-swiggy-buttery-smooth-5e3a15b931bf
+
+
+<img
+  src={getCloudinaryUrl(image, 800, 500, 'f_auto,q_auto')}
+  srcSet={`
+    ${getCloudinaryUrl(image, 400, 250, 'f_auto,q_auto')} 400w,
+    ${getCloudinaryUrl(image, 800, 500, 'f_auto,q_auto')} 800w,
+    ${getCloudinaryUrl(image, 1200, 750, 'f_auto,q_auto')} 1200w
+  `}
+  sizes="(max-width: 768px) 400px, (max-width: 1024px) 800px, 1200px"
+/>
+
+<video
+  controls
+  width="100%"
+  preload="metadata" // avoids loading full video until needed
+  poster="https://res.cloudinary.com/your-cloud-name/video/upload/so_1/your-video.jpg"
+>
+  <source
+    src="https://res.cloudinary.com/your-cloud-name/video/upload/f_auto,q_auto/your-video.mp4"
+    type="video/mp4"
+/>
+  Your browser does not support the video tag.
+</video>
+
+NewRelic -> monitoring tool
+
+Cloudinary = TinyPNG + much more.
+

@@ -1,5 +1,23 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+
+
+:root {
+  --bs-primary: rgb(255, 82, 0) !important;
+  --bs-primary-rgb: 255, 82, 0 !important;
+}
+
+a {
+  color: inherit !important; /* Use parent text color */
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+
 
 @font-face {
   font-family: 'Gilroy-Bold';
@@ -17,31 +35,38 @@
 }
 
 body {
-  font-family: 'Gilroy-Medium', sans-serif;
+  font-family: 'Gilroy-Medium', sans-serif !important;
 }
 
 @theme {
-    --color-primary: rgb(255, 82, 0);
-    --color-success: rgb(27, 166, 114);
-    --color-neutral: #ffffff;
-    --color-textdark: rgba(2, 6, 12, 0.92);
-    --color-textlight: rgba(2, 6, 12, 0.15);
-    --color-alert: #fa4a5b;
-    --color-placeholder: #525252;
+    --color-primary: rgb(255, 82, 0) !important;
+    --color-success: rgb(27, 166, 114) !important;
+    --color-neutral: #ffffff !important;
+    --color-textdark: rgba(2, 6, 12, 0.92) !important;
+    --color-textlight: rgba(2, 6, 12, 0.15) !important;
+    --color-alert: #fa4a5b !important;
+    --color-placeholder: #525252 !important;
 
-    --text-xxl: 24px;
-    --text-xl: 18px;
-    --text-lg: 16px;
-    --text-md: 13px;
-    --text-sm: 8px;
+    --text-xxl: 24px !important;
+    --text-xl: 18px !important;
+    --text-lg: 16px !important;
+    --text-md: 13px !important;
+    --text-sm: 8px !important;
     
-    --font-weight-exbold: 800;
-    --font-weight-bold: 600;
-    --font-weight-medium: 400;
-    --font-weight-light: 200;
+    --font-weight-exbold: 800 !important;
+    --font-weight-bold: 600 !important;
+    --font-weight-medium: 400 !important;
+    --font-weight-light: 200 !important;
 
-    --radius-exrounded: 16px;
-    --radius-mdrounded: 8px;
+    --radius-exrounded: 16px !important;
+    --radius-mdrounded: 8px !important;
+}
+
+.accordion-button {
+  background-color: white !important;
+  --bs-accordion-btn-focus-box-shadow: none !important;
+  --bs-accordion-active-color: rgba(2, 6, 12, 0.92) !important;
+
 }
 
  /* //#1ba672 */
