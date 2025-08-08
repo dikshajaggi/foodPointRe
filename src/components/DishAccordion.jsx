@@ -9,7 +9,24 @@ import DishCard from './DishCard';
 
 function DishAccordion() {
   const sample = new Array(2).fill(null);
-  const dishData = new Array(8).fill(null)
+  const dishData = [{
+    id: 1,
+    name: "Paneer Butter Masala",
+    price: 249,
+    rating: 4.5,
+    reviews: 132,
+    isVeg: true,
+    image: "/assets/sample-images/paneer.jpg"
+  },
+  {
+    id: 2,
+    name: "Chicken Biryani",
+    price: 299,
+    rating: 4.7,
+    reviews: 210,
+    isVeg: false,
+    image: "/assets/sample-images/biryani.jpg"
+  }]
 
 
   // Initially all open
@@ -33,9 +50,9 @@ function DishAccordion() {
             </AccordionHeader>
             <AccordionBody accordionId={index.toString()}>
                 <div className='flex flex-wrap justify-center w-full gap-8 px-4 mt-10 mb-10'>
-                    {dishData.map(() => {
+                    {dishData.map((item) => {
                         return (
-                            <DishCard />  
+                            <DishCard item={item} />  
                         )
                     })}
                 </div>
