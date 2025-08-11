@@ -33,9 +33,9 @@ const DishCard = ({item}) => {
         <div className='flex flex-col justify-evenly px-1.5 pt-1'>
           <div className='flex justify-between items-center mb-2'>
             <img src = {vegIcon} alt="veg-nonveg-icon" className='h-4 w-4 md:h-6 md:w-6 lg:h-6 lg:w-6' />
-            <div className='font-bold text-md md:text-xl lg:text-xl flex items-center text-success'><img src={greenStar} alt="gree-star-icon" className='h-4 w-4 md:h-6 md:w-6 lg:h-6 lg:w-6' /> 4.4 (21)</div> 
+            <div className='font-bold text-md md:text-lg lg:text-lg flex items-center text-success'><img src={greenStar} alt="gree-star-icon" className='h-4 w-4 md:h-4 md:w-4 lg:h-5 lg:w-5' /> 4.4 (21)</div> 
           </div>
-          <span className='font-bold capitalize text-md md:text-xl lg:text-xl'>dish name</span>
+          <span className='font-bold capitalize text-md md:text-lg lg:text-xl'>dish name</span>
           <div className='flex justify-between text-md md:text-xl lg:text-xl items-center mt-4'>
             <span className='font-bold md:text-xl lg:text-xl'>₹149</span>
            {

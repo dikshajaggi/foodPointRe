@@ -49,7 +49,7 @@ function DishAccordion() {
               <span className='font-exbold'>Category Name (22)</span>
             </AccordionHeader>
             <AccordionBody accordionId={index.toString()}>
-                <div className='flex flex-wrap justify-center w-full gap-8 px-4 mt-10 mb-10'>
+                <div className='flex flex-wrap justify-center w-full gap-8 mt-10 mb-10'>
                     {dishData.map((item) => {
                         return (
                             <DishCard item={item} />  
