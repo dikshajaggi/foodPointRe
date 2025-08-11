@@ -8,7 +8,9 @@ import DishAccordion from '../components/DishAccordion'
 
 // Sample restaurant data
 const restaurantData = new Array(12).fill(null)
+
 const Home = () => {
+
   return (
     <div className='flex flex-col items-center justify-center'>
       <ClearCartAlert />

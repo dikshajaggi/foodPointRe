@@ -13,7 +13,7 @@ const useFetch = (api, payload) => {
         try {
             const res = await api(payload);
             if (isMounted) {
-            setData(res);
+            setData(res.data);
             setError(null);
             }
         } catch (err) {
