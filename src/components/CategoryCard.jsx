@@ -6,9 +6,9 @@ import {getCategories} from "../apis/index"
 const Category = ({data}) => {
   const {image, name} = data
   return (
-     <div className='flex flex-col items-center justify-between min-w-[80px] h-32 mx-2'>
+     <div className='flex flex-col items-center justify-between min-w-fit h-28 md:h-32 mx-2'>
       <img src={image} alt="category-image" className='min-h-14 min-w-20 lg:max-w-30 lg:max-h-28 md:max-w-26 md:max-h-20'/>
-      <span className='text-md text-textdark font-bold capitalize text-center mt-1 md:text-md lg:text-md'>{name}</span>
+      <span className='text-md text-textdark font-bold capitalize text-center mt-1 md:text-md lg:text-lg'>{name}</span>
     </div>
   )
 }
