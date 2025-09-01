@@ -5,6 +5,7 @@ import CategoryCard from '../components/CategoryCard'
 import { Link } from 'react-router-dom'
 import ClearCartAlert from '../components/ClearCartAlert'
 import DishAccordion from '../components/DishAccordion'
+import Search from '../components/Search'
 
 // Sample restaurant data
 const restaurantData = new Array(12).fill(null)
@@ -13,6 +14,7 @@ const Home = () => {
 
   return (
     <div className='flex flex-col items-center justify-center'>
+      <Search />
       <ClearCartAlert />
 
       <DishAccordion />
