@@ -41,7 +41,7 @@ const restaurantData = [
 const Home = () => {
 
   return (
-    <div className='flex flex-col items-center justify-center px-20'>
+    <div className='flex flex-col items-center justify-center md:px-20'>
       {/* <ClearCartAlert />
       <DishAccordion /> */}
      
