@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { search } from '../apis'
 import { SearchIcon } from 'lucide-react'
 
-const Search = () => {
+const Search = ({bg, textColor, mt, height}) => {
 
   const [searchResults, setSearchResults] = useState([])
   const [query, setQuery] = useState("")
@@ -25,7 +25,7 @@ const Search = () => {
   }
 
   return (
-    <div className="w-full flex justify-center px-4 sm:px-6 lg:px-8">
+    <div className="w-full flex justify-center px-4 sm:px-6 lg:px-8" style={{marginTop: mt}}>
       <div className="relative w-full max-w-xl">
         {/* Search Input */}
         <div className='flex items-center justify-center'>
@@ -34,6 +34,7 @@ const Search = () => {
             onChange={handleSearch}
             className="w-full border rounded-2xl px-4 py-2 text-sm sm:text-base focus:outline-none shadow-sm"
             placeholder="Search for restaurants & dishes"
+            style={{backgroundColor: bg, color: textColor, height: height}}
           />
           <SearchIcon className='absolute right-4 text-placeholder pointer-events-none w-5 h-5' />
         </div>
