@@ -49,10 +49,9 @@ const Home = () => {
       {/* Restaurant Cards Grid */}
       <div className='flex flex-wrap justify-center w-full gap-4 px-4'>
         {restaurantData.map((item, index) => (
-            <Link to = {`/restaurant/${item?.name}`} key={index} ><RestCard /></Link>
+            <Link to = {`app/restaurant/${item?.name}`} key={index} ><RestCard /></Link>
         ))}
       </div>
-      <CartCard />
     </div>
   );
 };

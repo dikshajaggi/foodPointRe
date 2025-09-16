@@ -26,6 +26,24 @@ function DishAccordion() {
     reviews: 210,
     isVeg: false,
     image: "/assets/sample-images/biryani.jpg"
+  },
+{
+    id: 1,
+    name: "Paneer Butter Masala",
+    price: 249,
+    rating: 4.5,
+    reviews: 132,
+    isVeg: true,
+    image: "/assets/sample-images/paneer.jpg"
+  },
+  {
+    id: 2,
+    name: "Chicken Biryani",
+    price: 299,
+    rating: 4.7,
+    reviews: 210,
+    isVeg: false,
+    image: "/assets/sample-images/biryani.jpg"
   }]
 
 
@@ -42,19 +60,18 @@ function DishAccordion() {
 
   return (
     <>
-      <Accordion open={open} toggle={toggle} alwaysOpen>
+      <Accordion open={open} toggle={toggle} alwaysOpen >
         {sample.map((item, index) => (
           <AccordionItem key={index} className="bg-neutral text-textdark">
             <AccordionHeader targetId={index.toString()} className="bg-neutral text-textdark">
-              <span className='font-exbold'>Category Name (22)</span>
+              <span className='font-bold'>Category Name (22)</span>
             </AccordionHeader>
             <AccordionBody accordionId={index.toString()}>
-                <div className='flex flex-wrap justify-center w-full gap-8 mt-10 mb-10'>
-                    {dishData.map((item) => {
-                        return (
-                            <DishCard item={item} />  
-                        )
-                    })}
+                <div className="grid px-0 md:gap-8 mt-10 mb-10 w-[100%] md:px-4
+                  grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                  {dishData.map((item, idx) => (
+                    <DishCard key={idx} item={item} />
+                  ))}
                 </div>
             </AccordionBody>
           </AccordionItem>
